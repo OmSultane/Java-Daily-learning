@@ -2,27 +2,31 @@ import java.util.*;
 
 class first{
     public static void main(String[] args){
-        int x,y,z;
-        Scanner in = new Scanner(System.in);
-
         
-            System.out.println("Enter three numbers: ");
-            x = in.nextInt();
-            y = in.nextInt();
-            z = in.nextInt();
+        // int n = 5;
 
-            if(x>y){
-                if(x>z)
-                    System.out.println(x+" is greater");
-                else 
-                    System.out.println(y+" is greater");
-            }else{
-                if(y>z)
-                    System.out.println(y+" is greatest");
-                else
-                    System.out.println(z+" is greatest");
+        // for(int i=1; i<=n; i++){
+            
+        //     for(int j = 1; j <= n-i; j++){
+                
+        //             System.out.print("  ");
+        //     }
+            
+        //     for(int j=1; j <= n; j++){
+                
+        //             System.out.print("* ");
+        //     }
+            
+        //     System.out.println();
+        // }
+        
+        int n = 5;
+        for (int i = 0; i < n; i++) {
+
+            for (int j = ; j>=j-i; j--) {
+                System..print(j);
             }
-
-        
+            System.out.println();
+        }
     }
 }
