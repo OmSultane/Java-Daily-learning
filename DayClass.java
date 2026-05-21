@@ -1,0 +1,7 @@
+
+
+public enum DayClass{
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+
+   
+}
