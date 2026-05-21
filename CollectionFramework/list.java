@@ -48,6 +48,18 @@ public class list{
        System.out.println();
     
     
+       List<String> anotherlist = Arrays.asList("Apple", "Bannana", "Orange");
+        //we cannot add/remove elements in this type but we can set/replace elements 
+       anotherlist.set(2, "om");
+
+       System.out.println(anotherlist);
+
+
+
+
+       List<Integer> list3 = List.of(1, 2, 3, 4);
+       //It is the fixed list means we cannot add/remove & replace elements in this type of list and if we try to do that it throws an exception
     
+       
     }
 }
