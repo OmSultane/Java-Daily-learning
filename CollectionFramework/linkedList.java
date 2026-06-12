@@ -1,5 +1,5 @@
 package CollectionFramework;
-import java.util.LinkedList;
+import java.util.*;
 
 public class linkedList {
     public static void main(String[] args) {
@@ -34,6 +34,14 @@ public class linkedList {
         
         linkedList.getFirst();
 
+
+
+
+        /*      Linked List for String    */
+        LinkedList<String> animals = new LinkedList<String>(Arrays.asList("Cat", "Dog", "Elephant"));
+    
+        
+    
     }
 }
 
