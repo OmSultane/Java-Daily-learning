@@ -20,7 +20,14 @@ public class RightAngleStar {
             int n = input.nextInt();
             print(n);
         }
-
-        
     }
 }
+
+/*
+ 
+o/p :
+* 
+* *
+* * * 
+
+*/
