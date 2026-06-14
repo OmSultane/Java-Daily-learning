@@ -4,6 +4,8 @@ public class Bus implements Vehicle {
 	
 	DiscountService discountService;
 	
+	 Bus(){}
+
 	Bus(DiscountService discountService){
 		this.discountService = discountService;
 	}

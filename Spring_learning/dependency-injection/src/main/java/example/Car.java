@@ -4,7 +4,7 @@ public class Car implements Vehicle {
 	
 DiscountService discountService;
 	
-	Car(DiscountService discountService){
+	public Car(DiscountService discountService){
 		this.discountService = discountService;
 	}
 	
