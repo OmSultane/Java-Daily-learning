@@ -2,8 +2,10 @@
 
 public class Square {
     public static void main(String[] args){
-        printPattern(4);
         
+        int n = 3;
+        
+        printPattern(n);
     }
 
     private static void printPattern(int n){
@@ -16,9 +18,8 @@ public class Square {
             System.out.println();
         }
     }
-
-   
 }
+
 /*          
                           ***
                           ***
