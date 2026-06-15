@@ -7,10 +7,10 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="myVehicle" class="example.Bus">
+		<!-- Setting through constructor -->
     	<!-- <constructor-arg ref = "MyDiscountService" /> -->
 
-        <property name="DiscountService" ref="MyDiscountService"></property>
-
+		<property name="DiscountService" ref="MyDiscountService"></property>
     </bean>
 
 	<bean id = "MyDiscountService" class = "example.FestivalDiscount"></bean>

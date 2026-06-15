@@ -3,10 +3,15 @@ package example;
 public class Bus implements Vehicle {
 	
 	DiscountService discountService;
-	
-	 Bus(){}
+	public Bus(){}
 
+	//constructor injection
 	Bus(DiscountService discountService){
+		this.discountService = discountService;
+	}
+
+	//setter injection
+	public void setDiscountService(DiscountService discountService) {
 		this.discountService = discountService;
 	}
 	

@@ -1,4 +1,3 @@
-package DSA.patterns;
 import java.util.Scanner;
 
 public class RightAngleStar {
@@ -25,7 +24,7 @@ public class RightAngleStar {
 }
 
 /*
-
+ 
 o/p :
 * 
 * *
