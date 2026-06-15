@@ -1,4 +1,4 @@
-package DSA.patterns;
+// package DSA.patterns;
 import java.util.Scanner;
 
 public class RightAngleNumber {
