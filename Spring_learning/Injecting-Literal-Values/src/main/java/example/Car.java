@@ -3,6 +3,7 @@ package example;
 public class Car implements Vehicle {
 	
 	private String brandName;
+	private Double maximumRetailPrice;
 	
 	public String getBrandName() {
 		return brandName;
@@ -10,6 +11,16 @@ public class Car implements Vehicle {
 	
 	public void setBrandName(String brandName) {
 		this.brandName = brandName;
+	}
+	 
+	public void setMaximumRetailPrice(Double price) {
+		maximumRetailPrice = price; 
+	}
+	 
+
+	@Override
+	public Double getMaximumRetailPrice() {
+		return maximumRetailPrice; 
 	}
 	
 
