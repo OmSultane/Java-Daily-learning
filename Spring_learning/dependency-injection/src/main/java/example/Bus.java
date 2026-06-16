@@ -3,17 +3,14 @@ package example;
 public class Bus implements Vehicle {
 	
 	DiscountService discountService;
+	
+	
 	public Bus(){}
-
 	//constructor injection
 	Bus(DiscountService discountService){
 		this.discountService = discountService;
 	}
-
-	//setter injection
-	public void setDiscountService(DiscountService discountService) {
-		this.discountService = discountService;
-	}
+	
 	
 	@Override
 	public String getMileage() {
@@ -24,5 +21,6 @@ public class Bus implements Vehicle {
 	public String getDiscountMessage() {
 		return this.discountService.getDiscountMessage();
 	}
+	
 
 }
