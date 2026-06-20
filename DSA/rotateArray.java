@@ -7,6 +7,7 @@ public class rotateArray {
         int arr[] = {10, 20, 30, 40, 50};
         int n = arr.length;
         int d = 2;
+        d = d%n;
         rotate(arr, n, d);
         System.out.println(Arrays.toString(arr));
     }
