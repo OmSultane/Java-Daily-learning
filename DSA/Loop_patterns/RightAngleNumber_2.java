@@ -1,14 +1,14 @@
+// package DSA.patterns;
 import java.util.Scanner;
 
-public class ReverseRightAngleStar {
+public class RightAngleNumber_2 {
+
     private static void print(int n){
         for(int i = 1; i <= n; i++){
-
-            for(int j = 1; j <= n-i+1; j++){
-                System.out.print("* ");
+            for(int j = 1; j <= i; j++){
+                System.out.print(i+" ");
             }
             System.out.println();
-
         }
     }
 
@@ -28,15 +28,13 @@ public class ReverseRightAngleStar {
 }
 
 
+
 /*
 
 o/p :
-1 2 3
-1 2
-1
-
-Logic : 
-in every row we are printing n-i+1 ....total no.or rows - curr row no. + 1
-so inner loop condition should be n-i+1
+1 
+2 2
+3 3 3 
 
 */
+

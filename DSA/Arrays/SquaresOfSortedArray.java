@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Arrays;
 
 public class SquaresOfSortedArray {
     public int[] sortedSquares(int[] nums) {
@@ -17,5 +17,14 @@ public class SquaresOfSortedArray {
             }
         }
         return res;
-    }
-}
+    //     public static void main(String[] args) {
+            
+        
+    //     int[] arr = new int[5];
+
+    //     int a = arr.length - 0 + 1;
+
+    //     System.out.println(a);
+
+    // }}
+}}

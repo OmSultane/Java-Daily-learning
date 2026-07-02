@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Arrays;
 
 class SearchInRotatedArray{
     public static void main(String[] args) {

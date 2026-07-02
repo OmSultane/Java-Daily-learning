@@ -1,12 +1,11 @@
-// package DSA.patterns;
 import java.util.Scanner;
 
-public class RightAngleNumber_2 {
+public class RightAngleStar {
 
     private static void print(int n){
         for(int i = 1; i <= n; i++){
             for(int j = 1; j <= i; j++){
-                System.out.print(i+" ");
+                System.out.print("* ");
             }
             System.out.println();
         }
@@ -21,17 +20,15 @@ public class RightAngleNumber_2 {
             int n = input.nextInt();
             print(n);
         }
+        input.close();
     }
 }
 
-
-
 /*
-
+ 
 o/p :
-1 
-2 2
-3 3 3 
+* 
+* *
+* * * 
 
 */
-

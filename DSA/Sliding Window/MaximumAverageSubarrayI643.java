@@ -1,4 +1,4 @@
-package DSA;
+// package Sliding Window;
 
 public class MaximumAverageSubarrayI643 {
     public double findMaxAverage(int[] nums, int k) {

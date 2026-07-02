@@ -1,4 +1,4 @@
-package DSA;
+// package DSA;
 
 public class MaxConsecutiveOnesII487 {
     public int findMaxConsecutiveOnes(int[] nums){

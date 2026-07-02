@@ -21,6 +21,8 @@ public class RightAngleNumber {
             int n = input.nextInt();
             print(n);
         }
+        
+        input.close();
     }
 }
 
