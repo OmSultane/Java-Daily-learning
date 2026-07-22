@@ -1,3 +1,4 @@
+package DSA.Linked_List;
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -8,7 +9,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
+class ReverseLinkedList206 {
     public ListNode reverseList(ListNode head) {
         ListNode prev = null;
         ListNode curr = head;
