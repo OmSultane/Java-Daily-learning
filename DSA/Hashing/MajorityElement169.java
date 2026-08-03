@@ -5,17 +5,34 @@ import java.util.Map;
 
 class Solution {
     public int majorityElement(int[] nums) {
-        int n = nums.length / 2;
-        Map<Integer, Integer> map = new HashMap();
-
+        
+        int candidate = nums[0];
+        int count = 0;
         for(int i : nums){
-            map.put(i, map.getOrDefault(i, 0) + 1);
-        }
-        for(int i : map.keySet()){
-            if(map.get(i) > n){
-                return i;
+            if(candidate == i){
+                count++;
+            }else{
+                count--;
+                if(count == 0){
+                    candidate = i;
+                    count++;
+                }
             }
         }
-        return 0;
+        return candidate;
+        
+        
+        // int n = nums.length / 2;
+        // Map<Integer, Integer> map = new HashMap();
+
+        // for(int i : nums){
+        //     map.put(i, map.getOrDefault(i, 0) + 1);
+        // }
+        // for(int i : map.keySet()){
+        //     if(map.get(i) > n){
+        //         return i;
+        //     }
+        // }
+        // return 0;
     }
 }
