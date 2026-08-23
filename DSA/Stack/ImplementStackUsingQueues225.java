@@ -5,21 +5,28 @@ import java.util.Queue;
 
 class MyStack {
     Queue<Integer> queue1;
-    Queue<Integer> queue2;
+    // Queue<Integer> queue2;
 
     public MyStack() {
         queue1 = new LinkedList();
-        queue2 = new LinkedList();
+        // queue2 = new LinkedList();
     }
     
     public void push(int x) {
-        while(!queue1.isEmpty()){
-            queue2.add(queue1.poll());
-        }
+        int size = queue1.size();
         queue1.add(x);
-        while(!queue2.isEmpty()){
-            queue1.add(queue2.poll());
+
+        while(size-- > 0){
+            queue1.add(queue1.poll());
         }
+        
+        // while(!queue1.isEmpty()){
+        //     queue2.push(queue1.poll());
+        // }
+        // queue1.push(x);
+        // while(!queue2.isEmpty()){
+        //     queue1.push(queue2.poll);
+        // }
     }
     
     public int pop() {
