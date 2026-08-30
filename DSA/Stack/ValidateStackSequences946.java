@@ -4,16 +4,18 @@ import java.util.Stack;
 class solution{
     public boolean validateStackSequences(int[] pushed, int[] popped) {
         int j = 0;
-        Stack<Integer> st = new Stack();
+        int k = -1; 
+        // Stack<Integer> st = new Stack();
 
         for(int i = 0; i < pushed.length; i++){
-            st.push(pushed[i]);
-            while(!st.isEmpty() && st.peek() == popped[j]){
-                st.pop();
+            // st.push(pushed[i]);
+            pushed[++k] = pushed[i];
+            while(k > -1 && popped[j] == pushed[k]){
+                k--;
                 j++;
             }
         }
         
-        return st.isEmpty();
+        return k==-1;
     }
 }
