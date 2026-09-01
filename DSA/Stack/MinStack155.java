@@ -1,27 +1,34 @@
 package DSA.Stack;
 import java.util.Stack;
 
-class MinStack155 {
+class MinStack {
     Stack<Integer> stack;
     Stack<Integer> minStack;
 
-    public MinStack155() {
+    public MinStack() {
         stack = new Stack();
         minStack = new Stack();
     }
     
     public void push(int value) {
         stack.push(value);
-        if(minStack.isEmpty() || minStack.peek() > value){
+        if(minStack.isEmpty() || minStack.peek() >= value){
             minStack.push(value);
-        }else{
-            minStack.push(minStack.peek());
         }
     }
+    //     if(minStack.isEmpty() || minStack.peek() > value){
+    //         minStack.push(value);
+    //     }else{
+    //         minStack.push(minStack.peek());
+    //     }
+    // }
     
     public void pop() {
+        if(stack.peek().equals(minStack.peek()))
+            minStack.pop();
+
         stack.pop();
-        minStack.pop();
+        
     }
     
     public int top() {
